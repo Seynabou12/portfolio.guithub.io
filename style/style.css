@@ -1,76 +1,49 @@
 body {
   background-color: rgba(227, 233, 234, 1);
 }
-.carré {
-  position: absolute;
-  width: 408px;
-  height: 302px;
-  left: 20px;
-  top: 109px;
+span {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+/* Partie Profil */
+.profil {
+  margin-top: 130px;
   background: rgba(255, 255, 255, 0.69);
   box-shadow: 0px 0px 4px rgba(255, 255, 255, 0.69);
   border-radius: 20px;
-  width: 318.91px;
-  height: 251.67px;
-  left: 40.54px;
-  top: 134.17px;
 }
-.images {
-  position: absolute;
-  width: 318.91px;
-  height: 251.67px;
+.profil img {
   border-radius: 20px;
 }
-.content {
-  position: absolute;
-  width: 409px;
-  height: 299px;
-  left: 20px;
-  top: 435px;
+
+/* bibliographie  de l'auteur */
+.bibliographie {
   background: rgba(255, 255, 255, 0.69);
   box-shadow: 0px 0px 20px #e3e9ea;
   border-radius: 20px 20px 0px 0px;
-} 
-.card-tittle {
-  position: absolute;
-  width: 319.86px;
-  height: 31.85px;
-  top: 20px;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 21px;
-  letter-spacing: -0.02em;
-  color: #000000;
-  left: 40px;
+  margin-top: 30px;
 }
-.content .card-body .card-hearder {
-  position: absolute;
-  width: 52.44px;
-  height: 50.02px;
-  left: 68px;
-  top: 439px;
-}
-.content .card-body .card-tittle {
-  position: absolute;
-  width: 319.86px;
-  height: 31.85px;
-  left: 80px;
-  top: 50px;
+.card-title p {
+  text-align: center;
   font-family: "Roboto";
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
   line-height: 21px;
   letter-spacing: -0.02em;
-  color: #000000;
+  color: black;
 }
-.card-text {
-  position: absolute;
-  width: 356px;
-  height: 147px;
-  left: 20px;
-  top: 125px;
+.card-title p strong {
+  color: red;
+}
+.card-text p {
+  font-family: Roboto;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
@@ -78,30 +51,67 @@ body {
   text-align: center;
   letter-spacing: -0.02em;
   color: #000000;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  letter-spacing: -0.02em;
+  color: #000000;
+  left: 58px;
+  top: 551px;
 }
-h2 span {
-  color: red;
-}
-.card1 {
-  position: absolute;
-  width: 409px;
-  height: 122px;
-  left: 20px;
-  top: 752px;
+.contact {
   background: rgba(255, 255, 255, 0.69);
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
   border-radius: 0px 0px 20px 20px;
+  margin-top: 30px;
 }
-.card1 .card-body {
-  position: absolute;
-  width: 412.15px;
-  height: 122px;
+.contact h3 {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
+  text-transform: capitalize;
+  color: #000000;
+  margin-top: 10px;
   text-align: center;
 }
-.card1 .card-text {
-  position: absolute;
-  width: 388.69px;
-  height: 97px;
-  left: 10.46px;
-  top: 70px;
+
+.contact .btn {
+  background: #ee0505;
+  box-shadow: 0px 4px 20px 20px #ffffff;
+  border-radius: 10px;
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 15px;
+  text-align: center;
+  letter-spacing: -0.02em;
+  color: #ffffff;
+  margin-top: 10px;
+}
+.contact .button {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 15px;
+  text-align: center;
+  letter-spacing: -0.02em;
+  color: #000000;
+  background: #e3e9ea;
+  box-shadow: 0px 4px 20px rgba(255, 255, 255, 0.69);
+  border-radius: 10px;
+  margin-top: 10px;
+}
+.user::before {
+  background-color: red;
+  border-radius: 50px;
+  content: "";
+  height: 10px;
+  opacity: 10px;
+  width: 40px;
+  z-index: -1;
 }

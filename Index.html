@@ -1,12 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style/style.css">
   <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style/style.css">
+
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
   <link
     href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
@@ -15,14 +16,19 @@
 </head>
 
 <body>
+
   <!-- Intégration du header version mobile -->
-  <nav class="navbar navbar-light bg-light fixed-top">
+  <nav class="navbar navbar-light  fixed-top">
     <div class="container-fluid">
-      <a href="#" class="navbar-brand">
-        <img src="Images/Snapchat-1064513077.jpg" alt="logo" style="width: 90px; height: 90px;"
-          class="logo rounded-circle">
-        <span>SEYNABOU DIONE</span>
-      </a>
+      <div class="row">
+        <div class="container ">
+          <a href="#" class="navbar-brand">
+            <img src="Images/Snapchat-1064513077.jpg" alt="logo" style="width: 95px; height: 90px;"
+              class="logo rounded-circle">
+            <span>SEYNABOU DIONE</span>
+          </a>
+        </div>
+      </div>
       <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
         aria-controls="offcanvasNavbar">
         <span class="navbar-toggler-icon"></span>
@@ -38,7 +44,7 @@
               <a class="nav-link active" aria-current="page" href="#">Profil</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link scrollto" href="#">Formations / Diplomes</a>
+              <a class="nav-link scrollto" href="#">Formations/Diplomes</a>
             </li>
             <li class="nav-item ">
               <a class="nav-link scrollto" href="#">Compétences</a>
@@ -61,45 +67,49 @@
       </div>
     </div>
   </nav>
-  <!-- Intégration de la partie Profil version Mobile -->
-  <main class="container">
-    <section class="row">
-      <div class="col-12">
-        <div class="card carré">
-          <img src="Images/image.jpg" alt="" srcset="" class="images">
+  <!-- Section Profil  image de banniére-->
+  <section class="profil ms-3 me-3 h-25">
+    <div class="row">
+      <div class="container d-flex justify-content-center px-5 py-5 h-100">
+        <img src="Images/image.jpg" class="img-fluid h-100" alt="" srcset="">
+      </div>
+    </div>
+  </section>
+  <!-- Section profil bibliographie -->
+  <section class="bibliographie  ms-3 me-3">
+    <div class="row">
+      <div class="container">
+        <div class="user">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person"
+            viewBox="0 0 16 16">
+            <path
+              d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z" />
+          </svg>
+        </div>
+        <div class="card-title">
+          <p>Salut, Je me nomme <strong>SEYNABOU DIONE</strong> </p>
+        </div>
+        <div class="card-text">
+          <p>Le lorem ipsum est, en imprimerie, une suite de mots sans signification utilisée à titre provisoire pour
+            calibrer une mise en page, le texte définitif venant remplacer le faux-texte
+            dès qu'il est prêt ou que la mise en page est achevée. Généralement, on utilise un
+            texte en faux latin, le Lorem ipsum ou Lipsum.</p>
         </div>
       </div>
-    </section>
-    <section class="row content">
-      <div class="col-12">
-        <div class="card-body">
-          <div class="card-header"></div>
-          <div class="card-tittle">
-            <h2>Salut, je me nomme <span>SEYNABOU DIONE</span> </h2>
-          </div>
-          <div class="card-text">
-            <p>Le lorem ipsum est, en imprimerie, une suite de mots sans signification utilisée à titre
-              provisoire
-              pour calibrer une mise en page, le texte définitif venant remplacer le faux-texte dès qu'il est prêt
-              ou
-              que la mise en page est achevée. Généralement, on utilise un texte en faux latin, le Lorem ipsum ou
-              Lipsum.</p>
-          </div>
-        </div>
+    </div>
+    </div>
+  </section>
+  <section class="contact ms-3 me-3">
+    <div class="row">
+      <div class="container">
+          <h3>Télécharger mon Curiculum Vitéa</h3>
+          <button type="submit" class="btn">Télécharger mon CV</button>
+          <button type="submit" class="button">contacter moi</button>
       </div>
-    </section>
-    <section class="row card1">
-      <div class="col-12">
-          <div class="card-body">
-            <h2>Télécharger mon CV</h2>
-          </div>
-          <div class="card-text">
-            <button type="submit" class="btn btn-danger">Télécharger CV</button>
-            <button type="submit" class="btn btn-ountline-danger border-danger">Contacter moi</button>
-          </div>
-      </div>
-    </section>
-  </main>
+    </div>
+
+  </section>
+
   <script src="bootstrap/js/bootstrap.min.js"></script>
 </body>
 
