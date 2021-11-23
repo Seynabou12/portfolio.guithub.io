@@ -1,4 +1,107 @@
-@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&family=Public+Sans:wght@300&display=swap");
 body {
   background-color: rgba(227, 233, 234, 1);
+}
+.carré {
+  position: absolute;
+  width: 408px;
+  height: 302px;
+  left: 20px;
+  top: 109px;
+  background: rgba(255, 255, 255, 0.69);
+  box-shadow: 0px 0px 4px rgba(255, 255, 255, 0.69);
+  border-radius: 20px;
+  width: 318.91px;
+  height: 251.67px;
+  left: 40.54px;
+  top: 134.17px;
+}
+.images {
+  position: absolute;
+  width: 318.91px;
+  height: 251.67px;
+  border-radius: 20px;
+}
+.content {
+  position: absolute;
+  width: 409px;
+  height: 299px;
+  left: 20px;
+  top: 435px;
+  background: rgba(255, 255, 255, 0.69);
+  box-shadow: 0px 0px 20px #e3e9ea;
+  border-radius: 20px 20px 0px 0px;
+} 
+.card-tittle {
+  position: absolute;
+  width: 319.86px;
+  height: 31.85px;
+  top: 20px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: -0.02em;
+  color: #000000;
+  left: 40px;
+}
+.content .card-body .card-hearder {
+  position: absolute;
+  width: 52.44px;
+  height: 50.02px;
+  left: 68px;
+  top: 439px;
+}
+.content .card-body .card-tittle {
+  position: absolute;
+  width: 319.86px;
+  height: 31.85px;
+  left: 80px;
+  top: 50px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: -0.02em;
+  color: #000000;
+}
+.card-text {
+  position: absolute;
+  width: 356px;
+  height: 147px;
+  left: 20px;
+  top: 125px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  letter-spacing: -0.02em;
+  color: #000000;
+}
+h2 span {
+  color: red;
+}
+.card1 {
+  position: absolute;
+  width: 409px;
+  height: 122px;
+  left: 20px;
+  top: 752px;
+  background: rgba(255, 255, 255, 0.69);
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+  border-radius: 0px 0px 20px 20px;
+}
+.card1 .card-body {
+  position: absolute;
+  width: 412.15px;
+  height: 122px;
+  text-align: center;
+}
+.card1 .card-text {
+  position: absolute;
+  width: 388.69px;
+  height: 97px;
+  left: 10.46px;
+  top: 70px;
 }
