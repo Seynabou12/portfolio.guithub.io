@@ -10,7 +10,6 @@ span {
   text-transform: uppercase;
   color: #000000;
 }
-
 /* Partie Profil */
 .profil {
   margin-top: 130px;
@@ -21,7 +20,6 @@ span {
 .profil img {
   border-radius: 20px;
 }
-
 /* bibliographie  de l'auteur */
 .bibliographie {
   background: rgba(255, 255, 255, 0.69);
@@ -38,12 +36,13 @@ span {
   line-height: 21px;
   letter-spacing: -0.02em;
   color: black;
+  margin-top: 40px;
 }
 .card-title p strong {
   color: red;
 }
 .card-text p {
-  font-family: Roboto;
+  font-family: "Roboto";
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
@@ -58,7 +57,7 @@ span {
   letter-spacing: -0.02em;
   color: #000000;
   left: 58px;
-  top: 551px;
+  top: 570px;
 }
 .contact {
   background: rgba(255, 255, 255, 0.69);
@@ -74,10 +73,9 @@ span {
   line-height: 22px;
   text-transform: capitalize;
   color: #000000;
-  margin-top: 10px;
+  margin-top: 20px;
   text-align: center;
 }
-
 .contact .btn {
   background: #ee0505;
   box-shadow: 0px 4px 20px 20px #ffffff;
@@ -90,9 +88,15 @@ span {
   text-align: center;
   letter-spacing: -0.02em;
   color: #ffffff;
-  margin-top: 10px;
+  margin-top: 150px;
+  margin: 5px;
+  text-align: center;
 }
 .contact .button {
+  background: #e3e9ea;
+  box-shadow: 0px 4px 20px rgba(255, 255, 255, 0.69);
+  border-radius: 10px;
+  margin-top: 50px;
   font-family: "Work Sans";
   font-style: normal;
   font-weight: bold;
@@ -101,17 +105,95 @@ span {
   text-align: center;
   letter-spacing: -0.02em;
   color: #000000;
-  background: #e3e9ea;
-  box-shadow: 0px 4px 20px rgba(255, 255, 255, 0.69);
-  border-radius: 10px;
-  margin-top: 10px;
+  text-align: center;
+  margin-top: 150px;
+  margin: 5px;
 }
-.user::before {
+.user{
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: red;
-  border-radius: 50px;
+  width: 60px;
+  height: 60px;
+  border-radius: 80px;
+  padding:auto;
+  margin-top: 10px;
+  margin-left: 10px;
+  color: red;
+}
+/* Partie Formations */
+.formations {
+  text-align: center;
+  margin-top: 30px;
+}
+h1 
+{
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  color: #000000;
+  left: 177px;
+}
+.formations span {
+  position: absolute;
+  width: 20px;
+  height: 5px;
+  left: 900px;
+  top: 1700px;
+  background: #ee0505;
+}
+.carde {
+  background: #ee0505;
+  border: 0.3px solid #000000;
+  box-sizing: border-box;
+  box-shadow: 0px 15px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+}
+.carde::before {
+  border-radius: 6px;
   content: "";
-  height: 10px;
-  opacity: 10px;
-  width: 40px;
+  height: 100%;
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  transition: var(--transition);
+  width: 100%;
   z-index: -1;
+}
+.barre{
+  width: 5px;
+  height: 500px;
+  background-color: #c4c4c4;
+  position: relative;
+  margin-left: 20px;
+}
+.circle-position{
+  width: 10px;
+  height: 10px;
+  background-color: red;
+  border-radius: 50%;
+  position: absolute;
+  top: 100px;
+  left: 18px;
+}
+.line{
+  height: 3px;
+  width: 100px;
+  position: absolute;
+  background-color: #c4c4c4;
+  top: 104px;
+  left: 28px;
+}
+.carte{
+  background-color: red;
+  border-radius: 30px;
+  width: 500px;
+  height: 200px;
+  position: absolute;
+  top: 12px;
+  left: 100px;
 }
