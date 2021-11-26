@@ -12,9 +12,11 @@ span {
 }
 /* Partie Profil */
 .profil {
+  height: 50%;
   background: rgba(255, 255, 255, 0.69);
   box-shadow: 0px 0px 4px rgba(255, 255, 255, 0.69);
   border-radius: 20px;
+  max-height: 100%;
 }
 .profil img {
   border-radius: 20px;
@@ -142,13 +144,17 @@ h1::after {
   margin: 0 auto;
   background: #ee0505;
 }
+.formations span {
+  position: absolute;
+  width: 30px;
+  height: 5px;
+  background: #ee0505;
+}
 
-.barre {
-  width: 5px;
-  height: 400px;
+.hbar {
   background-color: #c4c4c4;
-  position: relative;
-  margin-left: 20px;
+  width: 60px;
+  height: 3px;
 }
 .circle-position {
   width: 10px;
@@ -178,89 +184,13 @@ h1::after {
   margin-right: 10px;
   box-shadow: 0px 5px 0px;
 }
-.carte p {
-  color: white;
-  font-family: "work sans";
-  text-align: center;
-  padding: 10px;
-  font-weight: bold;
-}
 
-.circle-position2 {
-  width: 10px;
-  height: 10px;
-  background-color: #c4c4c4;
-  border-radius: 50%;
-  position: absolute;
-  top: 185px;
-  left: -1px;
-}
-.line2 {
-  height: 3px;
-  width: 150px;
-  position: absolute;
-  background-color: #c4c4c4;
-  top: 190px;
-  left: 10px;
-}
-.carte2 {
-  background-color: white;
-  border-radius: 15px;
-  width: 260px;
-  height: 20%;
-  position: absolute;
-  top: 150px;
-  left: 70px;
-  margin-right: 10px;
-  box-shadow: 0px 5px 0px;
-}
-.carte2 p {
-  color: black;
-  font-family: "work sans";
-  text-align: center;
-  padding: 10px;
-  font-weight: bold;
-}
 
-.circle-position3 {
-  width: 10px;
-  height: 10px;
-  background-color: #c4c4c4;
-  border-radius: 50%;
-  position: absolute;
-  top: 325px;
-  left: -1px;
-}
-.line3 {
-  height: 3px;
-  width: 150px;
-  position: absolute;
-  background-color: #c4c4c4;
-  top: 328px;
-  left: 10px;
-}
-.carte3 {
-  background-color: white;
-  border-radius: 15px;
-  width: 260px;
-  height: 20%;
-  position: absolute;
-  top: 288px;
-  left: 70px;
-  margin-right: 10px;
-  box-shadow: 0px 5px 0px;
-}
-.carte3 p {
-  color: black;
-  font-family: "work sans";
-  text-align: center;
-  padding: 10px;
-  font-weight: bold;
-}
 /* section Diplome */
+
+
 .diplomes {
   text-align: center;
-  margin-top: 30px;
 }
 h1 {
   font-family: "Roboto";
@@ -270,11 +200,20 @@ h1 {
   line-height: 28px;
   color: #000000;
 }
+h1::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 30px;
+  height: 5px;
+  left: 130px;
+  margin: 0 auto;
+  background: #ee0505;
+}
 .diplomes span {
   position: absolute;
   width: 30px;
   height: 5px;
-  left: 200px;
   background: #ee0505;
 }
 .hbar {
@@ -300,7 +239,7 @@ span.circle2 {
 }
 .vertical-bar {
   height: 100%;
-  width: 10px;
+  width: 5px;
   position: absolute;
   background: rgb(195, 193, 193);
   z-index: -1;
@@ -348,13 +287,18 @@ span.circle2 {
   left: 200px;
   background: #ee0505;
 }
-.progression {
+.progression 
+{
+  display: block;
   background: rgba(255, 255, 255, 0.69);
   box-shadow: 4px 10px 4px rgba(0, 0, 0, 0.6);
   margin-top: 30px;
   padding: 30px 0;
+  margin-left: auto;
+  margin-right:auto ;
 }
-h2 {
+h2 
+{
   font-family: "Roboto";
   font-style: normal;
   font-weight: bold;
@@ -384,6 +328,7 @@ h2 {
   border-radius: 10px;
 }
 .bar .progress-line span {
+ 
   height: 100%;
   width: 80%;
   position: absolute;
@@ -402,12 +347,60 @@ h2 {
   border-right-width: 0px;
   border-top-color: #000;
 }
-.bar .progress-line span::before {
+.bar .progress-line span::after {
   position: absolute;
   content: "80%";
   right: 0;
   top: -30px;
   left: 360px;
+}
+.progress-line.figma span{
+  width: 85%;
+}
+.progress-line.adobe span{
+  width: 80%;
+}
+.progress-line.illustrator span{
+  width: 60%;
+}
+.progress-line.design span{
+  width: 60%;
+}
+.progress-line.html span{
+  width: 90%;
+}
+.progress-line.css span{
+  width: 80%;
+}
+.progress-line.php span{
+  width: 60%;
+}
+.progress-line.javascript span{
+  width: 50%;
+}
+.progress-line.figma span::after{
+  content: "85%";
+}
+.progress-line.adobe span::after{
+  content: "80%";
+}
+.progress-line.illustrator span::after{
+  content: "60%";
+}
+.progress-line.design span::after{
+  content: "60%";
+}
+.progress-line.html span::after{
+  content: "90%";
+}
+.progress-line.css span::after{
+  content: "80%";
+}
+.progress-line.php span::after{
+  content: "60%";
+}
+.progress-line.javascript span::after{
+  content: "50%";
 }
 /* Qualités Personnelles */
 .qualites-personnelles{
@@ -420,7 +413,6 @@ h2 {
   border-radius: 15px;
   margin: 20px 0;
   max-width: 500px;
-
 }
 .card-tittle {
   font-family: Roboto;
@@ -439,4 +431,26 @@ h2 {
   font-size: 18px;
   line-height: 21px;
   color: #000000;
+}
+/*  section Expérience */
+.experiences{
+  text-align: center;
+  margin-top: 30px;
+}
+.experiences .card {
+  background: rgba(255, 255, 255, 0.69);
+  border-radius: 15px;
+  padding: 10px;
+ 
+}
+.experiences img{
+  
+  border-radius: 15px 15px 15px 15px;
+  margin-top: 10px;
+}
+.experiences button{
+  background: #EE0505;
+  border-radius: 25px;
+  color: #ffffff;
+ 
 }
