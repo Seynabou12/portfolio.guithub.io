@@ -45,7 +45,7 @@ span {
   line-height: 21px;
   letter-spacing: -0.02em;
   color: black;
-  margin-top: 20px;
+  margin-top: -30px;
 }
 .card-title p strong {
   color: red;
@@ -72,7 +72,7 @@ span {
   background: rgba(255, 255, 255, 0.69);
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
   border-radius: 0px 0px 20px 20px;
-  margin-top: 30px;
+  margin-top: 20px;
 }
 .contact h3 {
   font-family: "Nunito";
@@ -82,7 +82,7 @@ span {
   line-height: 22px;
   text-transform: capitalize;
   color: #000000;
-  
+
   text-align: center;
 }
 .contact .btn {
@@ -127,7 +127,6 @@ span {
   height: 60px;
   border-radius: 80px;
   padding: auto;
-  margin-top: 10px;
   margin-left: 10px;
   color: red;
 }
@@ -199,7 +198,6 @@ h1::after {
 }
 
 /* section Diplome */
-
 .diplomes {
   text-align: center;
 }
@@ -286,74 +284,13 @@ span.circle2 {
   height: 80px;
   padding: 10px;
 }
-/* Section Compétences */
 
+/* Section Compétences */
 .progression {
   background: rgba(255, 255, 255, 0.69);
   box-shadow: 4px 10px 4px rgba(0, 0, 0, 0.6);
   margin-top: 20px;
-
 }
-
-/* 
-.competences span {
-  position: absolute;
-  width: 30px;
-  height: 5px;
-  left: 200px;
-  background: #ee0505;
-} */
-.experiences .col-lg-12 {
-  flex-direction: row;
-}
-/* .progress-line.figma span {
-  width: 85%;
-}
-.progress-line.adobe span {
-  width: 80%;
-}
-.progress-line.illustrator span {
-  width: 60%;
-}
-.progress-line.design span {
-  width: 60%;
-}
-.progress-line.html span {
-  width: 90%;
-}
-.progress-line.css span {
-  width: 80%;
-}
-.progress-line.php span {
-  width: 60%;
-}
-.progress-line.javascript span {
-  width: 50%;
-} */
-/* .progress-line.figma span::after {
-  content: "85%";
-}
-.progress-line.adobe span::after {
-  content: "80%";
-}
-.progress-line.illustrator span::after {
-  content: "60%";
-}
-.progress-line.design span::after {
-  content: "60%";
-}
-.progress-line.html span::after {
-  content: "90%";
-}
-.progress-line.css span::after {
-  content: "80%";
-}
-.progress-line.php span::after {
-  content: "60%";
-}
-.progress-line.javascript span::after {
-  content: "50%";
-} */
 /* Qualités Personnelles */
 .qualites-personnelles {
   margin-top: 20px;
@@ -367,7 +304,7 @@ span.circle2 {
   max-width: 400px;
 }
 .card-tittle {
-  font-family: Roboto;
+  font-family: "Roboto";
   font-style: normal;
   font-weight: bold;
   font-size: 24px;
@@ -387,35 +324,45 @@ span.circle2 {
 /*  section Expérience */
 .experiences {
   text-align: center;
-  margin-top: 30px;
-  padding: 60px 60px;
+  font-family: "roboto";
+  font-weight: bold;
+  margin-top: 20px;
+  padding: 30px;
+ 
 }
 .experiences .card {
-  background: rgba(255, 255, 255, 0.69);
-  border-radius: 15px;
-  padding: 10px;
+    background: rgba(255, 255, 255, 0.69);
+    box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+    margin: 20px 0;
+    max-width: 400px;
+}
+.experiences .card h4{
+  font-family: "roboto";
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 .experiences img {
-  border-radius: 15px 15px 15px 15px;
+  border-radius: 20px 20px 20px 20px;
   margin-top: 10px;
 }
 .experiences button {
   background: #ee0505;
   border-radius: 25px;
   color: #ffffff;
+  font-family: "roboto";
+  font-weight: bold;
 }
-.references {
-  background: rgba(255, 255, 255, 0.69);
-  border: 2px solid rgba(255, 255, 255, 0.69);
-  box-sizing: border-box;
-  box-shadow: 10px 15px 4px rgba(0, 0, 0, 0.25);
+.références {
+  
+  padding: 60px 60px;
 }
-.references .card {
+.références .card {
   margin: 20px 0;
+  padding: 10px;
   max-width: 400px;
-  display: flex;
-  position: relative;
-  width: 100%;
+  
 }
 .card-body h4 {
   font-family: Roboto;
@@ -426,11 +373,9 @@ span.circle2 {
   text-align: center;
   color: #000000;
 }
-.references form {
-  background: #e3e9ea;
-  border: 1px solid rgba(255, 255, 255, 0.69);
-  box-sizing: border-box;
-  box-shadow: 10px 15px 4px rgba(0, 0, 0, 0.25);
+.références img{
+  border-radius: 20px 20px 20px 20px;
+  margin-top: 10px;
 }
 p span {
   font-family: Roboto;
@@ -449,6 +394,7 @@ p span {
   justify-content: center;
   margin-top: 20px;
   padding: 40px 60px;
+  max-height: 900px;
 }
 .formulaire input {
   background: rgba(255, 255, 255, 0.69);
@@ -461,6 +407,16 @@ p span {
   padding: 15px;
   border: none;
   margin-bottom: 15px;
+}
+.form{
+  background: rgba(255, 255, 255, 0.69);
+  border: 2px solid rgba(255, 255, 255, 0.69);
+  box-sizing: border-box;
+  box-shadow: 10px 15px 4px rgba(0, 0, 0, 0.25);
+}
+form .btn{
+  background-color: #ee0505;
+  color: #ffffff;
 }
 .formulaire button {
   padding: 10px 10px;
@@ -490,8 +446,20 @@ p span {
   background-color: #ee0505;
 }
 
-@media screen and(max-width: 992px) {
-  .navbar {
-    font-size: 10px;
+/* centres d'interet */
+.interets{
+  background: rgba(255, 255, 255, 0.69);
+box-shadow: 0px 10px 4px rgba(0, 0, 0, 0.25);
+
+}
+.seynabou{
+  flex-direction: column;
+  display: flex;
+}
+
+@media screen and (min-width: 1200px) {
+  .seynabou{
+    flex-direction: row;
+    display: flex;
   }
 }
