@@ -10,13 +10,21 @@ span {
   text-transform: uppercase;
   color: #000000;
 }
+.navbar-nav .btn{
+  background-color: red;
+  color: #ffffff;
+}
 /* Partie Profil */
 .profil {
-  height: 50%;
+  /* height: 50%; */
   background: rgba(255, 255, 255, 0.69);
   box-shadow: 0px 0px 4px rgba(255, 255, 255, 0.69);
   border-radius: 20px;
   max-height: 100%;
+}
+
+.test {
+  max-height: 575px;
 }
 .profil img {
   border-radius: 20px;
@@ -26,7 +34,7 @@ span {
   background: rgba(255, 255, 255, 0.69);
   box-shadow: 0px 0px 20px #e3e9ea;
   border-radius: 20px 20px 0px 0px;
-  margin-top: 30px;
+  /* margin-top: 30px; */
 }
 .card-title p {
   text-align: center;
@@ -74,7 +82,7 @@ span {
   line-height: 22px;
   text-transform: capitalize;
   color: #000000;
-  margin-top: 20px;
+  
   text-align: center;
 }
 .contact .btn {
@@ -87,8 +95,9 @@ span {
   line-height: 15px;
   text-align: center;
   color: #ffffff;
-  margin: 5px;
+  
   text-align: center;
+  margin-left: 40px;
 }
 .contact .buton {
   background-color: transparent;
@@ -100,10 +109,14 @@ span {
   line-height: 15px;
   margin-top: 20px;
   text-align: center;
-  color: black#ffffff;
-  margin-top: 140px;
+  background: #E3E9EA;
+  box-shadow: 0px 4px 20px rgba(255, 255, 255, 0.69);
+  border-radius: 10px;
+  color: #000000;
+ 
   margin: 5px;
   text-align: center;
+  margin-left: 100px;
 }
 .user {
   display: flex;
@@ -185,9 +198,7 @@ h1::after {
   box-shadow: 0px 5px 0px;
 }
 
-
 /* section Diplome */
-
 
 .diplomes {
   text-align: center;
@@ -276,134 +287,75 @@ span.circle2 {
   padding: 10px;
 }
 /* Section Compétences */
-.competences {
-  text-align: center;
-  margin-top: 30px;
+
+.progression {
+  background: rgba(255, 255, 255, 0.69);
+  box-shadow: 4px 10px 4px rgba(0, 0, 0, 0.6);
+  margin-top: 20px;
+
 }
+
+/* 
 .competences span {
   position: absolute;
   width: 30px;
   height: 5px;
   left: 200px;
   background: #ee0505;
+} */
+.experiences .col-lg-12 {
+  flex-direction: row;
 }
-.progression 
-{
-  display: block;
-  background: rgba(255, 255, 255, 0.69);
-  box-shadow: 4px 10px 4px rgba(0, 0, 0, 0.6);
-  margin-top: 30px;
-  padding: 30px 0;
-  margin-left: auto;
-  margin-right:auto ;
-}
-h2 
-{
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: bold;
-  font-size: 20px;
-  line-height: 23px;
-  color: #000000;
-  text-align: center;
-}
-.title h2 {
-  margin-top: 20px;
-}
-.skills-bars .bar {
-  margin: 40px 0;
-}
-.skills-bars .bar .info {
-  margin-top: 5px;
-}
-.skills-bars .bar .info span {
-  margin-top: 0px;
-}
-.skills-bars .bar .progress-line {
-  position: relative;
-  width: 100%;
-  height: 10px;
-  background-color: rgba(0, 0, 0, 0.49);
-  box-shadow: 0px 10px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 10px;
-}
-.bar .progress-line span {
- 
-  height: 100%;
-  width: 80%;
-  position: absolute;
-  background-color: red;
-  border-radius: 10px;
-}
-.bar .progress-line span::before {
-  position: absolute;
-  content: "";
-  right: 0;
-  height: 0;
-  width: 0;
-  top: -10px;
-  border: 7px solid transparent;
-  border-bottom-width: 0px;
-  border-right-width: 0px;
-  border-top-color: #000;
-}
-.bar .progress-line span::after {
-  position: absolute;
-  content: "80%";
-  right: 0;
-  top: -30px;
-  left: 360px;
-}
-.progress-line.figma span{
+/* .progress-line.figma span {
   width: 85%;
 }
-.progress-line.adobe span{
+.progress-line.adobe span {
   width: 80%;
 }
-.progress-line.illustrator span{
+.progress-line.illustrator span {
   width: 60%;
 }
-.progress-line.design span{
+.progress-line.design span {
   width: 60%;
 }
-.progress-line.html span{
+.progress-line.html span {
   width: 90%;
 }
-.progress-line.css span{
+.progress-line.css span {
   width: 80%;
 }
-.progress-line.php span{
+.progress-line.php span {
   width: 60%;
 }
-.progress-line.javascript span{
+.progress-line.javascript span {
   width: 50%;
-}
-.progress-line.figma span::after{
+} */
+/* .progress-line.figma span::after {
   content: "85%";
 }
-.progress-line.adobe span::after{
+.progress-line.adobe span::after {
   content: "80%";
 }
-.progress-line.illustrator span::after{
+.progress-line.illustrator span::after {
   content: "60%";
 }
-.progress-line.design span::after{
+.progress-line.design span::after {
   content: "60%";
 }
-.progress-line.html span::after{
+.progress-line.html span::after {
   content: "90%";
 }
-.progress-line.css span::after{
+.progress-line.css span::after {
   content: "80%";
 }
-.progress-line.php span::after{
+.progress-line.php span::after {
   content: "60%";
 }
-.progress-line.javascript span::after{
+.progress-line.javascript span::after {
   content: "50%";
-}
+} */
 /* Qualités Personnelles */
-.qualites-personnelles{
+.qualites-personnelles {
   margin-top: 20px;
   padding: 30px;
 }
@@ -412,7 +364,7 @@ h2
   box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.25);
   border-radius: 15px;
   margin: 20px 0;
-  max-width: 500px;
+  max-width: 400px;
 }
 .card-tittle {
   font-family: Roboto;
@@ -433,24 +385,113 @@ h2
   color: #000000;
 }
 /*  section Expérience */
-.experiences{
+.experiences {
   text-align: center;
   margin-top: 30px;
+  padding: 60px 60px;
 }
 .experiences .card {
   background: rgba(255, 255, 255, 0.69);
   border-radius: 15px;
   padding: 10px;
- 
 }
-.experiences img{
-  
+.experiences img {
   border-radius: 15px 15px 15px 15px;
   margin-top: 10px;
 }
-.experiences button{
-  background: #EE0505;
+.experiences button {
+  background: #ee0505;
   border-radius: 25px;
   color: #ffffff;
- 
+}
+.references {
+  background: rgba(255, 255, 255, 0.69);
+  border: 2px solid rgba(255, 255, 255, 0.69);
+  box-sizing: border-box;
+  box-shadow: 10px 15px 4px rgba(0, 0, 0, 0.25);
+}
+.references .card {
+  margin: 20px 0;
+  max-width: 400px;
+  display: flex;
+  position: relative;
+  width: 100%;
+}
+.card-body h4 {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  color: #000000;
+}
+.references form {
+  background: #e3e9ea;
+  border: 1px solid rgba(255, 255, 255, 0.69);
+  box-sizing: border-box;
+  box-shadow: 10px 15px 4px rgba(0, 0, 0, 0.25);
+}
+p span {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  color: #000000;
+}
+.formulaire {
+  background: #e3e9ea;
+  border: 1px solid rgba(255, 255, 255, 0.69);
+  box-sizing: border-box;
+  box-shadow: 10px 15px 4px rgba(0, 0, 0, 0.25);
+  justify-content: center;
+  margin-top: 20px;
+  padding: 40px 60px;
+}
+.formulaire input {
+  background: rgba(255, 255, 255, 0.69);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.formulaire input [type="nom et prenom"],
+[type="telephon"] {
+  padding: 15px;
+  border: none;
+  margin-bottom: 15px;
+}
+.formulaire button {
+  padding: 10px 10px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 10px;
+  font-size: 15px;
+  color: red;
+  background: rgba(255, 255, 255, 0.69);
+}
+
+.starte p {
+  text-align: right;
+  margin-top: 20px;
+}
+.w3-wide {
+  margin-top: 15px;
+  position: absolute;
+}
+.w3-white {
+  background: rgba(0, 0, 0, 0.49);
+  box-shadow: 0px 10px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+}
+.w3-dark-grey {
+  background-color: #ee0505;
+}
+
+@media screen and(max-width: 992px) {
+  .navbar {
+    font-size: 10px;
+  }
 }

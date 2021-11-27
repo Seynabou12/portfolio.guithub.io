@@ -13,10 +13,9 @@
     rel="stylesheet">
   <title>Portfolio</title>
 </head>
-
 <body>
   <section class="container-fluid">
-    <header class="navbar navbar-expand-md navbar-light px-3 mt-4 ">
+    <header class="navbar navbar-expand-lg navbar-light px-3 mt-4 ">
       <div class="container ">
         <a href="#" class="navbar-brand">
           <img src="Images/Snapchat-1064513077.jpg" alt="logo" style="width: 95px; height: 90px;"
@@ -27,7 +26,7 @@
       <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-content">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <nav class="collapse navbar-collapse " id="navbar-content">
+      <nav class="collapse navbar-collapse justify-content-space-around" id="navbar-content">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item"><a class="nav-link" href="#">Profil</a></li>
           <li class="nav-item"><a class="nav-link" href="#">Formations / Diplomes</a></li>
@@ -36,21 +35,21 @@
           <li class="nav-item"><a class="nav-link" href="#">Expériences</a></li>
           <li class="nav-item"><a class="nav-link" href="#">Références</a></li>
           <li class="nav-item"><a class="nav-link" href="#">Centres d'Interet</a></li>
-          <li class="nav-item"><a href="#" class="btn btn-danger rounded-pill">Contact</a></li>
+          <li class="nav-item"><a href="#" class="btn mb-3">Contact</a></li>
         </ul>
       </nav>
     </header>
     <div class="row">
       <!-- Section Profil  image de banniére-->
-      <div class="col-sm-12 col-md-6 col-lg-6 order-lg-2">
+      <div class="col-sm-12 col-lg-6 order-lg-2">
         <div class="profil ms-3 me-3 px-5">
-          <div class="container d-flex justify-content-center py-5">
-            <img src="Images/image.jpg" class="img-fluid h-50" alt="" srcset="">
+          <div class="container d-flex justify-content-center py-5 test mb-5">
+            <img src="Images/image.jpg" class="img-fluid" alt="" srcset="">
           </div>
         </div>
       </div>
       <!-- Section profil bibliographie -->
-      <div class="col-sm-12 col-lg-6 order-lg-1">
+      <div class="col-sm-12 col-lg-6 order-lg-1 d-flex flex-column ">
         <div class="bibliographie  ms-3 me-3 px-5 py-5">
           <div class="user">
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-person"
@@ -59,10 +58,10 @@
                 d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z" />
             </svg>
           </div>
-          <div class="card-title">
-            <p>Salut, je me nomme<strong>SEYNABOU DIONE</strong></p>
+          <div class="card-title my-5">
+            <p>Salut, je me nomme <strong>SEYNABOU DIONE</strong></p>
           </div>
-          <div class="card-text">
+          <div class="card-text ">
             <p>Le lorem ipsum est, en imprimerie, une suite de mots sans signification utilisée à titre provisoire pour
               calibrer une mise en page, le texte définitif venant remplacer le faux-texte
               dès qu'il est prêt ou que la mise en page est achevée. Généralement, on utilise un
@@ -74,7 +73,7 @@
           <button type="submit" class="btn">
             <p>Télécharger mon CV</p>
           </button>
-          <button type="submit" class="buton">
+          <button type="submit" class="buton btn">
             <p>Contacter moi</p>
           </button>
         </div>
@@ -140,68 +139,71 @@
     </div>
     <!-- barres de progression -->
     <h1>Compétences</h1>
-    <section class="progression row container justify-content-evenly">
-      <div class="col-sm-8 col-md-6 col-lg-4">
-        <div class="skills-bars row">
-          <div class="col-sm-12 col-sm-6 col-lg-6 order-lg-1">
-            <div class="title">
-              <h2>Design Skill</h2>
-            </div>
-            <div class="bar">
-              <div class="info">
-                <span>FIGMA</span>
-              </div>
-              <div class="progress-line figma"><span></span></div>
-            </div>
-            <div class="bar">
-              <div class="info">
-                <span>ADOBE XD</span>
-              </div>
-              <div class="progress-line adobe"><span></span></div>
-            </div>
-            <div class="bar">
-              <div class="info">
-                <span>ILLUSTRATOR</span>
-              </div>
-              <div class="progress-line illustrator"><span></span></div>
-            </div>
-            <div class="bar">
-              <div class="info">
-                <span>DESIGN</span>
-              </div>
-              <div class="progress-line design"><span></span></div>
-            </div>
+    <div class="progression row me-5 ms-5">
+      <div class="col-sm-12 col-md-12 col-lg-6 mt-5">
+        <h2>Design Skill</h2>
+        <p class="w3-wide">FIGMA</p>
+        <div class="starte">
+          <p>85%</p>
+          <div class="w3-white">
+            <div class="w3-dark-grey" style="height:10px;width:85%"></div>
           </div>
-          <div class="col-sm-12 col-md-6 col-lg-6 order-lg-2">
-            <h2>Development Skill</h2>
-            <div class="bar">
-              <div class="info">
-                <span>HTML</span>
-              </div>
-              <div class="progress-line html"><span></span></div>
-            </div>
-            <div class="bar">
-              <div class="info">
-                <span>CSS</span>
-              </div>
-              <div class="progress-line css"><span></span></div>
-            </div>
-            <div class="bar">
-              <div class="info">
-                <span>PHP</span>
-              </div>
-              <div class="progress-line php"><span></span></div>
-            </div>
-            <div class="bar">
-              <div class="info">
-                <span>JAVASCRIPT</span>
-              </div>
-              <div class="progress-line javascript"><span></span></div>
-            </div>
+        </div>
+        <p class="w3-wide">ADOBE XD</p>
+        <div class="starte">
+          <p>80%</p>
+          <div class="w3-white">
+            <div class="w3-dark-grey" style="height:10px;width:80%"></div>
+          </div>
+        </div>
+        <p class="w3-wide">ILLUSTRATOR</p>
+        <div class="starte">
+          <p>60%</p>
+          <div class="w3-white">
+            <div class="w3-dark-grey" style="height:10px;width:60%"></div>
+          </div>
+        </div>
+        <p class="w3-wide">DESIGN</p>
+        <div class="starte">
+          <p>60%</p>
+          <div class="w3-white">
+            <div class="w3-dark-grey" style="height:10px;width:60%"></div>
           </div>
         </div>
       </div>
-    </section>
+      <div class="col-sm-12 col-md-12 col-lg-6 mb-5">
+        <h2 class="mt-5">Development Skill</h2>
+        <p class="w3-wide">HTML</p>
+        <div class="starte">
+          <p>90%</p>
+          <div class="w3-white">
+            <div class="w3-dark-grey" style="height:10px;width:85%"></div>
+          </div>
+        </div>
+        <p class="w3-wide">CSS</p>
+        <div class="starte">
+          <p>80%</p>
+          <div class="w3-white">
+            <div class="w3-dark-grey" style="height:10px;width:80%"></div>
+          </div>
+        </div>
+        <p class="w3-wide">PHP</p>
+        <div class="starte">
+          <p>60%</p>
+          <div class="w3-white">
+            <div class="w3-dark-grey" style="height:10px;width:60%"></div>
+          </div>
+        </div>
+        <p class="w3-wide">JAVASCRIPT</p>
+        <div class="starte">
+          <p>50%</p>
+          <div class="w3-white">
+            <div class="w3-dark-grey" style="height:10px;width:60%"></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
 
     <!-- Qualités Personnelles -->
     <h1>Qualités Personnelles</h1>
@@ -271,39 +273,39 @@
     <!-- section experiences -->
     <h1>Expériences </h1>
     <section>
-      <div class="experiences row">
-        <div class="col-sm-12 col-md-6 col-12">
-          <div class="card" style="width: 18rem;">
+      <div class="experiences row ">
+        <div class="col-sm-12 col-md-6 col-lg-12">
+          <div class="card" >
             <img src="Images/i.png" class="card-img-top border-radius" alt="...">
             <div class="card-body">
-              <button type="submit">2021-Présent</button>
-              <h4>A PP WEBSITE SIMPLON</h4>
-              <p class="card-text">Voluptatum deleniti atque
+              <button type="submit" class="col-sm-8 mb-3 btn">2021-Présent</button>
+              <h4 class="mb-3">A PP WEBSITE SIMPLON</h4>
+              <p class="card-text mb-3">Voluptatum deleniti atque
                 corrupti quos dolores et quas
                 molestias excepturi</p>
-              <button type="submit">Contacter moi</button>
+              <button type="submit" class="btn">Contacter moi</button>
             </div>
           </div>
-          <div class="card" style="width: 18rem;">
+          <div class="card">
             <img src="Images/i.png" class="card-img-top border-radius" alt="...">
             <div class="card-body">
-              <button type="submit">2021-Présent</button>
+              <button type="submit" class="col-sm-8 mb-3 btn">2021-Présent</button>
               <h4>A PP WEBSITE SIMPLON</h4>
               <p class="card-text">Voluptatum deleniti atque
                 corrupti quos dolores et quas
                 molestias excepturi</p>
-              <button type="submit">Contacter moi</button>
+              <button type="submit"  class="btn">Contacter moi</button>
             </div>
           </div>
-          <div class="card" style="width: 18rem;">
+          <div class="card">
             <img src="Images/i.png" class="card-img-top border-radius" alt="...">
             <div class="card-body">
-              <button type="submit">2021-Présent</button>
+              <button type="submit"  class="col-sm-8 mb-3 btn">2021-Présent</button>
               <h4>A PP WEBSITE SIMPLON</h4>
               <p class="card-text">Voluptatum deleniti atque
                 corrupti quos dolores et quas
                 molestias excepturi</p>
-              <button type="submit">Contacter moi</button>
+              <button type="submit"  class="btn">Contacter moi</button>
             </div>
           </div>
         </div>
@@ -313,7 +315,36 @@
     <!-- Sections Références -->
     <h1>Références</h1>
     <div class="références">
-      
+      <div class="card">
+        <img src="Images/i.png" class="card-img-top border-radius" alt="...">
+        <div class="card-body">
+          <h4>Jeacques Etiennes Ndiaye
+            <br> PDG de Yombal Téch
+          </h4>
+          <p class="card-text">Je suis disponible pour un travail indépendant. Connectez-vous avec moi via et appelez
+            sur mon compte.</p>
+          <p> <strong>Phone: +221781794521
+              <br> Email: jeaquesetiennendiaye@gmail.com</strong> <br> Trouver moi </p>
+
+        </div>
+      </div>
+      <div>
+        <div class="formulaire">
+          <form action="">
+            <div class="input">
+              <label for="name">Nom et Prénom <input type="text" value=""></label>
+
+              <label for="name">Téléphone <input type="text" value=""></label>
+
+              <label for="email">Email<input type="email" value=""></label>
+
+              <label for="massage">Message<input type="textarea" value=""></label>
+
+            </div>
+            <button type="submit">Envoyer</button>
+          </form>
+        </div>
+      </div>
     </div>
     <script src="bootstrap/js/bootstrap.min.js"></script>
 </body>
